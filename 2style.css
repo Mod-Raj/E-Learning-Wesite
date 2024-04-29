@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --primary-text-color: #183b56;
+    --secondary-color: #577592;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px
+ }
+
+
+  body {
+      font-family: 'poppins',sans-serif;
+      color: var(--primary-text-color);
+  }
+
+  h1{
+       font-size: 3rem;
+  }
+
+  h2{
+      font-size: 2rem;
+  }
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+      font-family: 'roboto',sans-serif;
+      font-size:1.25rem;
+      color: var(--secomdary-text-color);
+      line-height: 1.8rem;
+}
+
+
+a{
+   text-decoration: none;
+   display: inline-block;
+}
+
+ul{
+     list-style: none;
+     font-size: 20px;
+}
+
+/********************************* Utility class*****************************************************/
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container
+{
+      max-width: 1180px;
+      margin-inline: auto ;
+      padding-inline: var(--padding-inline-section);
+}
+
+ .flex{
+        display: flex;
+        align-items: center;
+ }
+
+ .hover-link{
+    color: var(--primary-text-color);
+ }
+
+ .nav-links ul li a:hover{
+     color: #4682B4;
+ }
+
+.hover-link::after{
+     content: '';
+     display: block;
+     width: 0%;
+     height: 3px;
+     background-color: #4682B4;
+     transition:width .3;
+}
+
+
+.hover-link:hover::after{
+    width:100%;
+    transition: width .3s;
+}
+
+
+
+ 
+
+/***************************************** Top banner **************************************/
+
+
+.top-banner
+{
+    background-image: url("raj.jpg"); 
+    
+    
+}
+
+.banner-text
+{
+   color:white;
+   padding:15px 30px;
+   text-align: center;
+}
+
+/**************************************************** Nav bar******************************************/
+.main-nav
+{ 
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex-basis:730px;
+}
+
+.nav-links ul{
+     justify-content: end;
+     gap: 40px;
+}
+
+
+/*********************************** Header section ***************************************/
+
+header{
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-left{ 
+    max-width: 40vw;
+}
+      
+
+.header-left h1{
+        margin-top: 20px;
+}
+
+.get-started-button{
+         margin-top: 20px;
+}
+
+
+.header-right img{
+    width: 600px;
+}
+
+
+/************************************ features-header************************************************/
+
+
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+    /*background-image: url("asset\ 34.svg");*/
+}
+.features-header{
+    text-align: center;
+    
+}
+
+.features-area{
+    justify-content: space-between;
+    
+}
+.features-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30px;
+}
+
+/* ****************************************cta-section ******************************************/
+.cta-section-container{
+        flex-direction: column;
+        gap: 30px;
+        color: white;
+}
+
+.cta-section{
+    padding: 120px var(--padding-inline-section);
+    background-color: #183b56;
+}
+
+/* ***********************************subfooter***************************************** */
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+    height: 50px;
+    
+}
+
+ .subfooter-container{
+
+      justify-content: center;
+
+      gap: 30px;
+}
+ 
+
+/* ***********************************All-button-section******************************************** */
+.button{
+    border: none;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1{background-color: #4caf50;}
+.button2{background-color: #008cba;}
+
+.button3{
+    background-color: #4caf50;
+    margin-left: 100px;
+}
+
+
+.button4{
+
+    background-color: #183b56;
+    margin-left: 500px;
+}
+
+.button5{
+    background-color: #4caf50;
+    margin-left: 600px;
+}
+.level{    
+     text-align: center;
+}
+
+#copyID{
+    margin-left: 1000px;
+}
+
+
+/*---------------------------------------Notes_page_style--------------------------------------------*/
+
+.notes{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+input[type=text]{
+    padding: 12px 20px;
+    border: 2px solid black;
+}
+
+#filename{
+    width: calc(200px);
+    border: 2px solid #4caf50;
+    border-radius: 2px;
+    color: #183b56;
+    padding: 0 10px;
+    height: 50px;
+    line-height: 50px;
+    font-size:20px;
+    margin-top: 20px;
+}
+
+#download{
+
+    background: #3ba9f4;
+    color:white;
+    font-size: 20px;
+    height:50px;
+    border: none;
+    border-radius: 2px;
+    width: 174px;
+    cursor: pointer;
+}
+
+
+/************************************************************************************************************************/
+
+.bhati{
+    padding: 2px var(--padding-inline-section) 0;
+    left: 20px;
+    right: 100px;
+    
+}
+
+.my-sectionn{
+    justify-content: center;
+     border: #183b56;
+
+}
+
+RCB{
+    background-color: #4caf50;
+}
+
+
+
+
+
+
+/* scroll bar for level in courc pag*/
+.scroll-bar{
+    height: 500px;
+    width:200px;
+    border: 1px solid grey;
+    overflow: auto;
+    margin-left: 1100px;
+}
+
+
+
+
+

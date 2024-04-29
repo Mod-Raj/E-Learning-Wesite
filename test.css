@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --primary-text-color: #183b56;
+    --secondary-color: #577592;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px
+ }
+ body {
+	font-family: 'poppins',sans-serif;
+	color: var(--primary-text-color);
+}
+  h1{
+       font-size: 3rem;
+  }
+
+  h2{
+      font-size: 2rem;
+  }
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+      font-family: 'roboto',sans-serif;
+      font-size:1.25rem;
+      color: var(--secomdary-text-color);
+      line-height: 1.8rem;
+}
+
+
+a{
+   text-decoration: none;
+   display: inline-block;
+}
+
+ul{
+     list-style: none;
+     font-size: 20px;
+}
+
+/********************************* Utility class*****************************************************/
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container
+{
+      max-width: 1180px;
+      margin-inline: auto ;
+      padding-inline: var(--padding-inline-section);
+}
+
+ .flex{
+        display: flex;
+        align-items: center;
+ }
+
+ .hover-link{
+    color: var(--primary-text-color);
+ }
+
+ .nav-links ul li a:hover{
+     color: #4682B4;
+ }
+
+.hover-link::after{
+     content: '';
+     display: block;
+     width: 0%;
+     height: 3px;
+     background-color: #4682B4;
+     transition:width .3;
+}
+
+
+.hover-link:hover::after{
+    width:100%;
+    transition: width .3s;
+}
+
+
+
+ 
+
+/***************************************** Top banner **************************************/
+
+
+.top-banner
+{
+    background-image: url("raj.jpg"); 
+    
+    
+}
+
+.banner-text
+{
+   color:white;
+   padding:15px 30px;
+   text-align: center;
+}
+
+/************************* Nav bar******************************/
+.main-nav
+{ 
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex-basis:730px;
+}
+
+.nav-links ul{
+     justify-content: end;
+     gap: 40px;
+}
+
+.button{
+    border: none;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1{background-color: #4caf50;}
+.button2{background-color: #008cba;}
+
+
+
+/**********************************TEST******************************************************************
+body{
+	padding: 0;
+	margin: 0;
+	width:100vw;
+	height: 100vh;
+}*/
+.panel{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding: 0;
+	margin: 0;
+	width:100vw;
+	height: 100vh;
+}
+.question-container{
+	margin: 10px;
+	padding: 5px;
+	width: 80vw;
+	height: 10vh;
+	background-color: #c7dddf;
+	font-size: x-large;
+	text-align: center;
+	
+}
+.result{
+	margin: 10px;
+	padding: 5px;
+	width:80vw;
+	height: 10vh;
+	text-align: center;
+	font-size: 50px;
+	
+}
+.option-container{
+	display: flex;
+	justify-content: space-around;
+	margin: 10px;
+	padding: 5px;
+	width: 80vw;
+	height: 20vh;
+	background-color: #d5f4e6;
+	
+}
+.option{
+	padding: 10px;
+	width: 15vw;
+	height: 10vh;
+	font-size: larger;
+	background-color: #80ced6;
+	border-radius: 10%;
+}
+.option:hover{
+	background-color: #b1cbbb; /*lightgoldenrodyellow*/
+}
+.navigation{
+	width: 80vw;
+	height: 10vh;
+	margin: 10px;
+	padding: 5px;
+	display: flex;
+	justify-content: space-around;
+	background-color:white;
+}
+
+.evaluate,.next{
+	width:30vw;
+	height: 8vh;
+	padding: 5px;
+	font-size: larger;
+}
+.evaluate{
+
+	background-color:#3b753d;
+}
+.next{
+	color: black;
+	background-color: #c94c4c;
+}
+
+
+/* ***********************************subfooter***************************************** */
+.subfooter{
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+    height: 50px;
+    
+}
+
+ .subfooter-container{
+
+      justify-content: center;
+
+      gap: 30px;
+}

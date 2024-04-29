@@ -1,0 +1,80 @@
+/*------------------------------Sign_up_form------------------------------------------------------------*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("raj.jpg");
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 580px;
+    padding: 15px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    background-color: lavender;
+    backdrop-filter: blur(9px);
+    box-shadow: 2px 2px 2px 2px;
+    z-index: 2;
+}
+
+input{
+    margin: 5px 0px;
+    height: 35px;
+    padding: 7px;
+}
+
+button{
+    height:  40px;
+    margin: 5px 0px;
+    background-color: lightseagreen;
+    border:none;
+    border-radius: 5px;
+    color: #333;
+}
+
+button:hover{
+    background-color: #333;
+    color: skyblue;
+}
+
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to right,#ffffcccc, skyblue);
+    position: absolute;
+}
+
+
+.c1{
+     top:70px;
+     left:40px;
+}
+
+.c2{
+    bottom: 70px;
+    right:40px;
+}
+
+/*------------------SIGN_IN  Page code---------------------------------------*/
+.Signin{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 220px;
+    padding: 15px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    background-color: #ebf6f5;
+}
